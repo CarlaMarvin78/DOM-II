@@ -25,3 +25,12 @@ let img = document.querySelector(".intro img");
 img.addEventListener("click", function (event){
     audio.play();
 });
+
+let img_content = document.querySelector(".img-content img");
+img_content.addEventListener("mouseover", function (event){
+ img_content.setAttribute("src", "img/Spain-Map.jpg") ;  
+});
+
+img_content.addEventListener("mouseout", function (event){
+    img_content.setAttribute("src", "img/adventure.jpg");
+});
