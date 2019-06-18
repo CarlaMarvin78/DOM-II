@@ -1,12 +1,20 @@
 // Your code goes here
 
+let logo_heading = document.querySelector(".logo-heading");
+logo_heading.addEventListener("mouseover", function(event) {
+    logo_heading.setAttribute("style","font-size: 7rem; color: hotpink");
+});
+logo_heading.addEventListener("mouseout", function(event) {
+    logo_heading.removeAttribute("style");
+});
+
 let btn = document.querySelectorAll(".btn");
 btn[0].addEventListener("click", function (event){
     btn[0].setAttribute("style", "background-color:orange");
 });
 
 btn[1].addEventListener("mouseover", function (event){
-    btn[1].setAttribute("style", "border-radius:80px; width:160px; background-color:pink");
+    btn[1].setAttribute("style", "border-radius:80px; width:160px; background-color:hotpink");
 });
 
 btn[2].addEventListener("dblclick", function (event) {
