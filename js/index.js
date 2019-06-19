@@ -11,7 +11,7 @@ logo_heading.addEventListener("mouseout", function(event) {
 
 let btn = document.querySelectorAll(".btn");
 btn[0].addEventListener("click", function (event){
-    btn[0].setAttribute("style", "background-color: ");
+    btn[0].setAttribute("style", "background-color:orange");
 });
 
 btn[1].addEventListener("mouseover", function (event){
@@ -50,5 +50,20 @@ img_content.addEventListener("mouseover", function (event){
 img_content.addEventListener("mouseout", function (event){
     img_content.setAttribute("src", "img/adventure.jpg");
 });
+
+let body = document.querySelector("body");
+let footer = document.querySelector(".footer");
+footer.addEventListener("click",function(event) {
+    alert("This is a test.");
+    body.setAttribute("style","background-color: green");
+});
+
+let footer_p = document.querySelector(".footer p");
+footer_p.addEventListener("click", function(event) {
+    // This stops the above click listener from being handled.
+    event.stopPropagation();
+});
+
+
 
 
